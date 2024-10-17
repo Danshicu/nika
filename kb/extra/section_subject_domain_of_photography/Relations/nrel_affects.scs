@@ -1,0 +1,30 @@
+nrel_affects
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+  [влиять](* <- lang_ru;; *);
+  [affects](* <- lang_eng;; *);;
+
+nrel_affects <- rrel_key_sc_element:... 
+(*
+    <- sc_definition;;
+    <- definition;;
+    => nrel_main_idtf: 
+    [опр. (влиять)](*<- lang_ru;;*);
+    [def. (affects)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [влиять — это оказывать воздействие, изменять что-либо.](*<- lang_ru;;*);;
+        -> rrel_example: 
+            [to affects is to have an effect on, to change something.](*<- lang_en;;*);;
+    *);;
+*);;
+
+nrel_affects
+=>nrel_first_domain:concept_an_object;
+=>nrel_second_domain:concept_an_object;
+
+<- binary_relation ;
+<- reflexive_relation ;
+<- transitive_relation ;;
+

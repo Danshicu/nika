@@ -1,0 +1,46 @@
+concept_portrait
+<- concept_photography_genre;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [портрет]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [portrait]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [портрет — это жанр искусства и фотографии, сосредоточенный на изображении человека или группы людей, с акцентом на их лицах, выражениях и эмоциях. главная цель портрета — передать характер, настроение и индивидуальность субъекта.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [портретная фотография может быть формальной или неформальной, студийной или на открытом воздухе, и часто использует мягкое освещение, правильную композицию и фокус на глазах, чтобы акцентировать внимание на субъекте. важную роль в портретной фотографии играет взаимодействие с моделью для создания естественных и выразительных кадров.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.портрет]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [портрет крупным планом с акцентом на глаза модели передаёт её внутренние чувства и настроение.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_composition;
+			concept_lighting;
+			concept_emotion;
+			concept_character;
+			concept_aesthetics;
+			concept_interaction;
+			nrel_affects;
+			concept_photography
+   	 };;
+  *);;

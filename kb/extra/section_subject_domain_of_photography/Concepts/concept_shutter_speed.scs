@@ -1,0 +1,44 @@
+concept_shutter_speed
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [выдержка]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [shutter speed]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [выдержка — это время, в течение которого затвор камеры остаётся открытым, позволяя свету попадать на матрицу или плёнку, формируя изображение.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [выдержка напрямую влияет на экспозицию и размытие движения в кадре. длинная выдержка пропускает больше света, но может вызвать размытость при движении объекта.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.выдержка]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [короткая выдержка (например, 1/1000 секунды) замораживает движение, а длинная выдержка (например, 1 секунда) создаёт эффект размытия.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_camera;
+			concept_exposure;
+			concept_light;
+			concept_motion_blur;
+			nrel_affects;
+			concept_photography
+   	 };;
+  *);;

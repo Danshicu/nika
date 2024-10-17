@@ -1,0 +1,45 @@
+concept_retouching
+<- concept_editing;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [ретушь]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [retouching]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [ретушь — это процесс обработки изображений с целью улучшения их визуального качества, исправления недостатков и добавления художественных эффектов. она широко используется в портретной, рекламной и художественной фотографии.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [ретушь может включать удаление дефектов кожи, изменение цвета, коррекцию освещения, добавление или удаление объектов, а также применение специальных эффектов. использование программного обеспечения для редактирования фотографий, такого как adobe photoshop, стало стандартом в процессе ретуши.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.ретушь]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [ретушь портретов позволяет устранить мелкие недостатки и сделать изображение более привлекательным для зрителя.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_photo_editing;
+			concept_image_correction;
+			concept_digital_art;
+			nrel_affects;
+			nrel_editing_type;
+			concept_photography;
+			concept_visual_art
+   	 };;
+  *);;

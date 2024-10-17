@@ -1,0 +1,45 @@
+concept_black_and_white_photography
+<- concept_editing;
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [чёрно-белая фотография]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [black and white photography]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [чёрно-белая фотография — это вид фотографии, в котором изображение состоит только из оттенков серого, без использования цвета. этот стиль съёмки акцентирует внимание на текстуре, форме, свете и тени, делая композицию более выразительной.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [чёрно-белая фотография используется для создания драматичного эффекта, сосредоточенности на эмоциях и атмосфере. в отсутствие цвета зритель больше сосредотачивается на контрасте, симметрии и деталях изображения.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.чёрно-белая фотография]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [портрет в чёрно-белом стиле может передать глубокие эмоции благодаря сильному контрасту света и тени.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_contrast;
+			concept_lighting;
+			concept_composition;
+			nrel_affects;
+			concept_photography;
+			concept_visual_art
+   	 };;
+  *);;

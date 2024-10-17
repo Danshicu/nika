@@ -1,0 +1,45 @@
+concept_still_life
+<- concept_photography_genre;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [натюрморт]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [still life]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [натюрморт — это жанр изобразительного искусства и фотографии, в котором изображаются неодушевлённые предметы, такие как цветы, фрукты, посуда и другие объекты, обычно расположенные в эстетически продуманной композиции.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [в натюрморте акцент делается на форме, текстуре, цвете и композиции объектов. этот жанр позволяет фотографу или художнику экспериментировать с освещением и деталями для создания гармоничного и выразительного изображения.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.натюрморт]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [фотография натюрморта с яблоками и цветами, где основное внимание уделено текстуре кожуры и мягкому свету, создаёт ощущение покоя.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_composition;
+			concept_lighting;
+			concept_texture;
+			concept_still_life_art;
+			concept_aesthetics;
+			nrel_affects;
+			concept_photography
+   	 };;
+  *);;

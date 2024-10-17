@@ -1,0 +1,45 @@
+concept_macro_photography
+<- concept_photography_genre;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [макросъёмка]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [macro photography]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [макросъёмка — это вид фотографии, при котором объект съёмки увеличивается до размера, значительно превышающего его реальную величину. основная цель макросъёмки — запечатлеть мелкие детали, которые обычно не видны невооружённым глазом.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [макросъёмка используется для съёмки насекомых, растений, текстур и других мелких объектов. для неё обычно используются специальные макрообъективы с малым фокусным расстоянием и возможностью фокусировки на коротком расстоянии.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.макросъёмка]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [макрофотография глаза мухи показывает мельчайшие детали структуры, невидимые при обычной съёмке.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_focus;
+			concept_depth_of_field;
+			concept_lighting;
+			concept_magnification;
+			nrel_affects;
+			concept_photography;
+			concept_visual_art
+   	 };;
+  *);;

@@ -1,0 +1,46 @@
+concept_photography_genre
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [жанр фотографии]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [photography genre]
+   (* <- lang_eng;; *);
+
+=> nrel_note:
+   [жанр фотографии — это категория, которая определяет стиль и содержание фотографий в зависимости от их цели, тематики и методов съёмки. каждый жанр имеет свои особенности, техники и эстетические принципы.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [cреди популярных жанров фотографии можно выделить портрет, пейзаж, стрит-фото, макросъёмку, натюрморт и документальную фотографию. каждый жанр требует различных навыков и подходов к композиции, освещению и передаче эмоций.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. жанр фотографии]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [портретная фотография фокусируется на выражении эмоций и характере человека, в то время как пейзажная фотография стремится запечатлеть красоту природы.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_portrait;
+			concept_landscape;
+			concept_street_photography;
+			concept_macro_photography;
+			concept_nature_photography;
+			nrel_affects;
+			concept_documentary_photography
+   	 };;
+  *);;
+

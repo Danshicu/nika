@@ -1,0 +1,47 @@
+concept_light
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [свет]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [light]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [свет — это основной элемент фотографии, определяющий видимость и восприятие объектов. без света изображение невозможно, так как именно свет создаёт контраст и текстуру на снимке.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [свет может быть естественным (солнечный свет) или искусственным (лампы, вспышки). ключевые параметры света — его направление, интенсивность, мягкость или жёсткость, цветовая температура.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.свет]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [мягкий рассеянный свет создаёт плавные тени, а жёсткий направленный свет подчёркивает текстуры и формы.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_camera;
+			concept_exposure;
+			concept_shadow;
+			concept_contrast;
+			nrel_affects;
+			concept_photography;
+			concept_natural_light;
+			concept_artificial_light;
+			concept_color_temperature
+   	 };;
+  *);;

@@ -1,0 +1,47 @@
+concept_filters
+<- concept_photography;
+<- concept_editing;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [фильтры]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [filters]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [фильтры — это оптические элементы, которые устанавливаются перед объективом камеры для изменения светового потока, проходящего на матрицу или плёнку, а также для создания различных эффектов на изображении.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [существуют различные типы фильтров, включая поляризационные, нейтральные (nd), градиентные и цветные фильтры. каждый из них используется для достижения определённых целей, таких как уменьшение бликов, управление экспозицией или изменение цветового баланса.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.фильтры]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [поляризационный фильтр помогает убрать отражения от воды и стекла, улучшая цвет и контраст изображения.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_polarizing_filter;
+			concept_neutral_density_filter;
+			concept_color_filter;
+			concept_graduated_filter;
+			nrel_affects;
+			nrel_editing_type;
+			concept_photography;
+			concept_image_quality
+   	 };;
+  *);;

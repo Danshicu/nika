@@ -1,0 +1,45 @@
+concept_symmetry
+<- concept_photography_genre;
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [симметрия]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [symmetry]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [симметрия — это гармоничное распределение элементов изображения вокруг одной или нескольких осей, создающее ощущение равновесия и упорядоченности. симметричные композиции часто воспринимаются как эстетически приятные и привлекательные.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [симметрия может быть горизонтальной, вертикальной или радиальной. использование симметрии в фотографии помогает подчеркнуть структуру и формы, а также привлечь внимание к центральным объектам.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.симметрия]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [симметричная композиция, например, отражение здания в воде, создаёт эффект спокойствия и гармонии.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_composition;
+			concept_balance;
+			concept_aesthetics;
+			nrel_affects;
+			concept_photography;
+			concept_visual_art
+   	 };;
+  *);;

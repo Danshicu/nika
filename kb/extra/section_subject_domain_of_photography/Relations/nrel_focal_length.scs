@@ -1,0 +1,30 @@
+nrel_focal_length
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+  [фокусное расстояние](* <- lang_ru;; *);
+  [focal length](* <- lang_eng;; *);;
+
+nrel_focal_length <- rrel_key_sc_element:... 
+(*
+    <- sc_definition;;
+    <- definition;;
+    => nrel_main_idtf: 
+    [опр. (фокусное расстояние)](*<- lang_ru;;*);
+    [def. (focal length)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [фокусное расстояние — это расстояние от центра линзы или зеркала до фокальной точки.](*<- lang_ru;;*);;
+        -> rrel_example: 
+            [focal length is the distance from the center of the lens or mirror to the focal point.](*<- lang_en;;*);;
+    *);;
+*);;
+
+nrel_focal_length
+=>nrel_first_domain:concept_an_optical_device;
+=>nrel_second_domain:concept_a_distance;
+
+<- binary_relation ;
+<- non_reflexive_relation ;
+<- non_transitive_relation ;;
+

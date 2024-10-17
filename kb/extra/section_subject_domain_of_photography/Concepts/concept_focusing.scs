@@ -1,0 +1,43 @@
+concept_focusing
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [фокусировка]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [focusing]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [фокусировка — это процесс настройки объектива для получения чёткого изображения объекта на матрице или плёнке камеры.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [фокусировка может быть автоматической (система камеры самостоятельно определяет фокус) или ручной (фотограф вручную настраивает резкость на объекте съёмки).]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.фокусировка]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [для съёмки портрета важно точно сфокусироваться на глазах модели, чтобы передать её выразительность.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_lens;
+			concept_objective;
+			concept_depth_of_field;
+			nrel_affects;
+			concept_image_clarity
+   	 };;
+  *);;

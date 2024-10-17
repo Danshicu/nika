@@ -1,0 +1,46 @@
+concept_landscape
+<- concept_photography_genre;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [пейзаж]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [landscape]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [пейзаж — это жанр искусства и фотографии, посвящённый изображению природных или городских видов. пейзажная фотография стремится запечатлеть красоту и величие окружающей среды, передать её настроение и атмосферу.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [пейзаж может включать горы, леса, реки, моря, а также архитектурные элементы, такие как здания и мосты. при съёмке пейзажей особое внимание уделяется свету, композиции и перспективе для создания глубины и акцента на главных элементах сцены.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.пейзаж]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [фотография горного пейзажа на закате, где солнечные лучи освещают вершины, создаёт ощущение покоя и величия природы.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_composition;
+			concept_lighting;
+			concept_perspective;
+			concept_nature;
+			concept_architecture;
+			concept_aesthetics;
+			nrel_affects;
+			concept_photography
+   	 };;
+  *);;

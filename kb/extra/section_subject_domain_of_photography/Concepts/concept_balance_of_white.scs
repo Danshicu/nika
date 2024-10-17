@@ -1,0 +1,45 @@
+concept_white_balance
+<- concept_editing;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [баланс белого]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [white balance]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [баланс белого — это настройка камеры, которая позволяет корректировать цветовую температуру изображения, обеспечивая естественное воспроизведение цветов в различных условиях освещения.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [неправильный баланс белого может привести к цветовым искажениям, например, к слишком тёплым (желтоватым) или холодным (синим) оттенкам. баланс белого можно устанавливать автоматически, вручную или с помощью предустановок.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.баланс белого]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [использование предустановки «день» позволяет корректировать цвет при съёмке на открытом воздухе при солнечном свете.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_color_temperature;
+			concept_light;
+			concept_exposure;
+			concept_camera;
+			nrel_affects;
+			concept_photography;
+			concept_color_correction
+   	 };;
+  *);;

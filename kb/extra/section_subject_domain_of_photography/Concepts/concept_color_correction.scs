@@ -1,0 +1,46 @@
+concept_color_correction
+<- concept_editing;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [коррекция цвета]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [color correction]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [коррекция цвета — это процесс изменения и улучшения цветового баланса изображения для достижения естественного и гармоничного внешнего вида. этот процесс устраняет цветовые искажения, вызванные освещением или настройками камеры.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [цветокоррекция включает настройку яркости, контрастности, насыщенности и оттенков. она применяется как к фотографиям, так и к видео для создания эстетически приятных и точных цветов. программы для редактирования, такие как adobe lightroom и photoshop, часто используются для выполнения цветокоррекции.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.коррекция цвета]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [коррекция цвета помогает убрать нежелательные цветовые оттенки, например, синий при съёмке в тени или желтый при искусственном освещении.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_color_theory;
+			concept_white_balance;
+			concept_exposure;
+			nrel_affects;
+			nrel_editing_type;
+			concept_photography;
+			concept_visual_art;
+			concept_video_editing
+   	 };;
+  *);;

@@ -1,0 +1,45 @@
+concept_bokeh
+<- concept_visual_effect;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [боке]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [bokeh]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [боке — это визуальный эффект, который создаётся размытием фона и объектов вне зоны фокуса на фотографии. этот эффект усиливает восприятие глубины и акцентирует внимание на основном объекте съёмки.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [качество боке зависит от оптических характеристик объектива и диафрагмы. мягкое, приятное боке часто ассоциируется с профессиональной фотографией и создаётся при помощи объективов с большой светосилой (широкая диафрагма).]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.боке]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [боке, создаваемое при использовании светосильного объектива, позволяет отделить объект съёмки от фона и создать мягкое, приятное размытие.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_depth_of_field;
+			concept_aperture;
+			concept_focus;
+			nrel_affects;
+			nrel_editing_type;
+			concept_photography;
+			concept_visual_art
+   	 };;
+  *);;

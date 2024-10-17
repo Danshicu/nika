@@ -1,0 +1,29 @@
+nrel_include
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+  [включать](* <- lang_ru;; *);
+  [include](* <- lang_eng;; *);;
+
+nrel_include <- rrel_key_sc_element:... 
+(*
+    <- sc_definition;;
+    <- definition;;
+    => nrel_main_idtf: 
+    [опр. (включать)](*<- lang_ru;;*);
+    [def. ( include)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [включать — это иметь что-либо в своем составе..](*<- lang_ru;;*);; 
+        -> rrel_example: 
+            [to include is to have something in its composition.](*<- lang_en;;*);;
+    *);;
+*);;
+
+nrel_include
+=>nrel_first_domain:concept_an_object;
+=>nrel_second_domain:concept_an_object;
+
+<- binary_relation ;
+<- reflexive_relation ;
+<- transitive_relation ;;

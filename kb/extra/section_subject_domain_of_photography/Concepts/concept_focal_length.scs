@@ -1,0 +1,45 @@
+concept_focal_length
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [фокусное расстояние]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [focal length]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [фокусное расстояние — это расстояние от оптического центра объектива до фокальной плоскости, где формируется чёткое изображение объекта.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [фокусное расстояние определяет угол обзора и степень увеличения изображения. чем больше фокусное расстояние, тем уже угол обзора и сильнее приближение.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.фокусное расстояние]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [широкоугольные объективы имеют короткое фокусное расстояние, а телеобъективы — длинное.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_lens;
+			concept_objective;
+			nrel_angle_of_view;
+			concept_optics;
+			concept_image;
+			nrel_affects;
+			concept_magnification
+   	 };;
+  *);;

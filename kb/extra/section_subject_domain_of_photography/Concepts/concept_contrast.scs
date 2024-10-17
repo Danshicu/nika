@@ -1,0 +1,45 @@
+concept_contrast
+<- concept_editing;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [контраст]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [contrast]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [контраст — это разница между светлыми и тёмными областями изображения, а также между цветами. он играет важную роль в создании визуального интереса и помогает выделить ключевые элементы фотографии.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [высокий контраст может создать драматичное и выразительное изображение, тогда как низкий контраст часто используется для создания мягких и спокойных сцен. контраст может быть управляем при помощи освещения, постобработки и выбора композиции.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.контраст]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [фотография с ярко выраженным контрастом между тёмным фоном и светлым объектом помогает акцентировать внимание на предмете.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_lighting;
+			concept_texture;
+			concept_color;
+			nrel_affects;
+			nrel_editing_type;
+			concept_photography;
+			concept_visual_art
+   	 };;
+  *);;

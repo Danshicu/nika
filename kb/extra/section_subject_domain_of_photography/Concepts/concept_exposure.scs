@@ -1,0 +1,47 @@
+concept_exposure
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [экспозиция]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [exposure]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [экспозиция — это количество света, которое попадает на матрицу или плёнку камеры, формируя изображение. она определяется сочетанием трёх параметров: выдержки, диафрагмы и светочувствительности (iso).]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [экспозиция влияет на яркость изображения: недостаточная экспозиция приводит к затемнённости кадра (недоэкспонированию), а избыточная — к пересветам (переэкспонированию).]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.экспозиция]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [правильная экспозиция достигается балансом между выдержкой, диафрагмой и iso, чтобы получить оптимальную яркость и детализацию изображения.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_shutter_speed;
+			concept_aperture;
+			concept_iso_sensitivity;
+			concept_light;
+			concept_photography;
+			nrel_affects;
+			concept_image_quality;
+			concept_underexposure;
+			concept_overexposure
+   	 };;
+  *);;

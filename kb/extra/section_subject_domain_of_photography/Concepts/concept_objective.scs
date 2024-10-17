@@ -1,0 +1,45 @@
+concept_objective
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [объектив]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [objective]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [объектив — это оптическая система, состоящая из нескольких линз или зеркал, предназначенная для получения изображений объектов на фотоматериале или матрице фотоаппарата.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [объективы бывают разных типов: фиксированные, зум-объективы, широкоугольные, телеобъективы и другие.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.объектив]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [объектив влияет на такие характеристики изображения, как резкость, глубина резкости и угол обзора.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_lens;
+			nrel_focal_length;
+			concept_aperture;
+			concept_camera;
+			concept_light;
+			nrel_consist;
+			concept_optical_system
+   	 };;
+  *);;

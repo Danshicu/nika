@@ -1,0 +1,45 @@
+concept_iso_sensitivity
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [светочувствительность]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [iso sensitivity]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [светочувствительность (iso) — это показатель чувствительности матрицы камеры или фотоплёнки к свету. чем выше значение iso, тем больше света может быть воспринято, что позволяет снимать в условиях низкой освещённости.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [повышение iso увеличивает светочувствительность, но также может приводить к увеличению уровня шума на изображении. оптимальное значение iso зависит от условий съёмки и желаемого качества изображения.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.светочувствительность]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [при iso 100 изображение будет более детализированным, но потребуется больше света, а при iso 1600 можно снимать в темноте, но увеличится шум.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_camera;
+			concept_exposure;
+			concept_light;
+			concept_noise;
+			nrel_affects;
+			nrel_editing_type;
+			concept_photography
+   	 };;
+  *);;

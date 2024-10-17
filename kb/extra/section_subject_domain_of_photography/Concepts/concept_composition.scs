@@ -1,0 +1,46 @@
+concept_composition
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [композиция]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [composition]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [композиция — это организация и расположение объектов в кадре, определяющая визуальный баланс и структуру изображения. правильная композиция помогает направить внимание зрителя на ключевые элементы фотографии.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [композиционные приёмы включают правило третей, золотое сечение, ведущие линии, симметрию и асимметрию, а также использование рамок и пустого пространства.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.композиция]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [правило третей предполагает разделение кадра на девять равных частей и размещение ключевых элементов на пересечении этих линий.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_rule_of_thirds;
+			concept_golden_ratio;
+			concept_leading_lines;
+			concept_symmetry;
+			concept_balance;
+			nrel_affects;
+			concept_visual_perception;
+			concept_artistic_expression
+   	 };;
+  *);;

@@ -1,0 +1,45 @@
+concept_fashion
+<- concept_photography;
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [мода]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [fashion]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [мода — это социальное явление, характеризующееся временными изменениями в стиле, одежде, аксессуарах и образе жизни, отражающими культурные и эстетические предпочтения определённого времени и общества.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [мода охватывает различные сферы жизни, включая одежду, дизайн, искусство и даже поведение. она влияет на общественные вкусы и стандарты, меняется под воздействием культурных, экономических и технологических факторов.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.мода]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [современная мода часто объединяет элементы разных культур, стилей и эпох, создавая эклектичные образы.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_style;
+			concept_culture;
+			concept_aesthetics;
+			concept_trends;
+			nrel_affects;
+			concept_design;
+			concept_fashion_industry
+   	 };;
+  *);;

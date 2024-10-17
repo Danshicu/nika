@@ -1,0 +1,154 @@
+section_subject_domain_of_photography
+=> nrel_main_idtf:
+    [Раздел. Предметная область фотографии]
+    (* <- lang_ru;; *);
+    [Section. Subject domain of photography] 
+    (* <- lang_en;; *);
+<- atomic_section;;
+
+section_subject_domain_of_photography = [*
+    subject_domain_of_photography
+    <- sc_node_struct;
+    => nrel_main_idtf:
+        [Предметная область фотографии]
+        (* <- lang_ru;; *);
+        [Subject domain of photography]
+        (* <- lang_en;; *);
+    <- subject_domain;
+    -> rrel_maximum_studied_object_class:
+    	concept_aesthetic;
+        concept_camera;
+        concept_image;
+        concept_lens;
+        concept_light;
+        concept_focus;
+        concept_filter;
+        concept_symmetry;
+        concept_light_source;
+        concept_landscape;
+        concept_fashion;
+        concept_aperture;
+        concept_color_palette;
+        concept_shutter_speed;
+        concept_still_life;
+        concept_focal_length;
+        concept_editing;
+        concept_scaling;
+        concept_type_of_lighting;
+        concept_depth_of_field;
+        concept_texture;
+        concept_focusing;
+        concept_contrast;
+        concept_composition;
+    -> rrel_not_maximum_studied_object_class:
+        concept_digital_camera;
+        concept_film_camera;
+        concept_sensor;
+        concept_macro_photography;
+        concept_color_correction;
+        concept_bokeh;
+        concept_objective;
+        concept_image_processing;
+        concept_perspective;
+        concept_retouching;
+        concept_portrait;
+        concept_photographic_technique;
+        concept_portrait_photography;
+        concept_landscape_photography;
+        concept_macrophotography;
+        concept_photography;
+        concept_HDR;
+        concept_exposure;
+        concept_ISO_sensitivity;
+        concept_sports_photography;
+        concept_street_photography;
+        concept_post_processing;
+        concept_black_and_white_photography;
+        concept_balance_of_white;
+        concept_histogram;
+    -> rrel_explored_relation:
+    	nrel_affects;
+        rrel_resolution;
+        rrel_color_balance;
+        nrel_lighting_conditions;
+        rrel_focal_length;
+        rrel_iso;
+        rrel_white_balance;
+        nrel_composition_rule;
+        nrel_framing;
+        nrel_angle_of_view;
+        nrel_consist;
+        rrel_size;
+        nrel_focal_length;
+        nrel_editing_type;
+        rrel_sharpness;;
+*];;
+
+section_subject_domain_of_photography
+-> rrel_key_sc_element:
+    subject_domain_of_photography;
+    concept_camera;
+    concept_image;
+    concept_lens;
+    concept_bokeh;
+    concept_portrait;
+    concept_landscape;
+    concept_aesthetic;
+    concept_texture;
+    concept_light;
+    concept_retouching;
+    concept_perspective;
+    concept_contrast;
+    concept_macro_photography;
+    concept_HDR;
+    concept_focus;
+    concept_symmetry;
+    concept_color_palette;
+    concept_still_life;
+    concept_editing;
+    concept_scaling;
+    concept_photography;
+    concept_exposure;
+    concept_fashion;
+    concept_type_of_lighting;
+    concept_filter;
+    concept_ISO_sensitivity;
+    concept_light_source;
+    concept_aperture;
+    concept_objective;
+    concept_shutter_speed;
+    concept_depth_of_field;
+    concept_black_and_white_photography;
+    concept_composition;
+    concept_digital_camera;
+    concept_focusing;
+    concept_focal_length;
+    concept_film_camera;
+    concept_sensor;
+    concept_color_correction;
+    concept_balance_of_white;
+    concept_image_processing;
+    concept_photographic_technique;
+    concept_portrait_photography;
+    concept_landscape_photography;
+    concept_macrophotography;
+    concept_sports_photography;
+    concept_street_photography;
+    concept_post_processing;
+    concept_histogram;
+    rrel_resolution;
+    rrel_color_balance;
+    nrel_lighting_conditions;
+    rrel_focal_length;
+    rrel_iso;
+    rrel_size;
+    nrel_editing_type;
+    nrel_focal_length;
+    rrel_white_balance;
+    nrel_composition_rule;
+    nrel_framing;
+    nrel_consist;
+    nrel_affects;
+    nrel_angle_of_view;
+    rrel_sharpness;;
+

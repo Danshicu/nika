@@ -1,0 +1,43 @@
+concept_aperture
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [диафрагма]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [aperture]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [диафрагма — это элемент объектива, который регулирует количество света, попадающего на матрицу или пленку камеры, через изменение размера отверстия.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [диафрагма влияет на глубину резкости изображения и экспозицию. меньшие значения диафрагмы (большие отверстия) пропускают больше света, но уменьшают глубину резкости.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.диафрагма]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [диафрагма f/2.8 пропускает больше света и создаёт малую глубину резкости, чем диафрагма f/16.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_lens;
+			concept_objective;
+			concept_exposure;
+			concept_depth_of_field;
+			nrel_affects;
+			concept_photography
+   	 };;
+  *);;

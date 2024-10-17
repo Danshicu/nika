@@ -1,0 +1,44 @@
+concept_texture
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [текстура]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [texture]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [текстура — это визуальное или тактильное качество поверхности объекта, которое может быть передано через фотографию. она добавляет глубину и интерес к изображению, влияя на восприятие и эмоциональный отклик зрителя.]
+   (* <- lang_ru;; *);
+
+=> nrel_note:
+   [текстура может быть как физической (реальная поверхность объекта), так и визуальной (создаваемая светом и тенью). в фотографии текстура подчеркивается с помощью освещения, фокусировки и композиции.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.текстура]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [использование бокового света может подчеркнуть текстуру стены, создавая рельефные тени и детали.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_lighting;
+			concept_contrast;
+			concept_composition;
+			concept_material;
+			nrel_affects;
+			concept_photography;
+			concept_visual_art
+   	 };;
+  *);;

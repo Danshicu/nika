@@ -1,0 +1,30 @@
+nrel_editing_type
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+  [тип редактирования](* <- lang_ru;; *);
+  [editing type](* <- lang_eng;; *);;
+
+nrel_editing_type <- rrel_key_sc_element:... 
+(*
+    <- sc_definition;;
+    <- definition;;
+    => nrel_main_idtf: 
+    [опр. (тип редактирования)](*<- lang_ru;;*);
+    [def. (editing type)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [тип редактирования — это способ или метод внесения изменений в текст, изображение или данные.](*<- lang_ru;;*);;
+        -> rrel_example: 
+            [editing type refers to the method or manner of making changes to text, image, or data.](*<- lang_en;;*);;
+    *);;
+*);;
+
+nrel_editing_type
+=>nrel_first_domain:concept_a_process;
+=>nrel_second_domain:concept_an_editing_method;
+
+<- binary_relation ;
+<- non_reflexive_relation ;
+<- non_transitive_relation ;;
+
