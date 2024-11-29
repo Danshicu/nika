@@ -1,0 +1,38 @@
+concept_photo
+<- concept_wit_entity;
+<- sc_node_class;
+
+=> nrel_main_idtf:
+   [фото]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [photo]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [фото(фотография) — технология записи изображения путём регистрации оптических излучений с помощью светочувствительного фотоматериала или полупроводникового преобразователя.]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [опр.фото]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [На технологиях фотографии основано фотоискусство, которое считается одним из видов изобразительного искусства и занимает ключевое место в современной массовой культуре.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			concept_composition;
+			concept_lighting;
+			concept_equipment;
+			concept_artistic_expression;
+			concept_technique
+   	 };;
+  *);;

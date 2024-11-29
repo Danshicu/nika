@@ -1,0 +1,30 @@
+nrel_photography_genre
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+  [жанр фотографии](* <- lang_ru;; *);
+  [photography genre](* <- lang_eng;; *);;
+
+nrel_date <- rrel_key_sc_element:... 
+(*
+    <- sc_definition;;
+    <- definition;;
+    => nrel_main_idtf: 
+    [опр. (жанр фотографии)](*<- lang_ru;;*);
+    [def. (photography genre)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [жанр фотографии — отношение, связывающее фотографию и жанр, в котором она сделана.](*<- lang_ru;;*);;
+        -> rrel_example: 
+            [photography genre - the relationship between a photograph and the genre in which it was taken.](*<- lang_en;;*);;
+    *);;
+*);;
+
+nrel_photography_genre
+=>nrel_first_domain:concept_photo;
+=>nrel_second_domain:concept_photography_genre;
+
+<- binary_relation ;
+<- non_reflexive_relation ;
+<- non_transitive_relation ;;
+

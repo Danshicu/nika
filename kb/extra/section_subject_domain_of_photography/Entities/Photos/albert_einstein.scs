@@ -1,0 +1,22 @@
+AlbertEinstein
+<- concept_photo;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Albert Einstein]
+    (* <- lang_ru;; *);
+=> nrel_idtf:
+    [Альберт Эйнштейн]
+    (* <- lang_ru;; *);
+=> nrel_note:
+   [Альбе́рт Эйнште́йн (нем. Albert Einstein, 14 марта 1879, Ульм, королевство Вюртемберг, Германская империя — 18 апреля 1955, Принстон, штат Нью-Джерси, США) — швейцарский, немецкий и американский физик-теоретик и общественный деятель-гуманист, один из основателей современной теоретической физики.]
+   (* <- lang_ru;; *);
+=> nrel_date:
+   [1951]
+   (* <- lang_ru;; *);
+=> nrel_place:
+   [Принстон]
+   (* <- lang_ru;; *);
+=> nrel_photography_genre:
+   [concept_portrait]
+   (* <- lang_ru;; *);;
+

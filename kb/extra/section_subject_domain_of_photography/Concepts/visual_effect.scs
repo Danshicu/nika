@@ -1,7 +1,7 @@
 concept_visual_effect
+<- concept_wit_entity;
 <- concept_editing;
 <- sc_node_class;
-<- class;
 
 => nrel_main_idtf:
    [визуальный эффект]

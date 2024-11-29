@@ -1,8 +1,8 @@
 concept_black_and_white_photography
+<- concept_wit_entity;
 <- concept_editing;
 <- concept_photography;
 <- sc_node_class;
-<- class;
 
 => nrel_main_idtf:
    [чёрно-белая фотография]

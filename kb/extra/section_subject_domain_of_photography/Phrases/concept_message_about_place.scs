@@ -1,0 +1,30 @@
+concept_message_about_division  
+<- sc_node_not_relation;  
+=> nrel_main_idtf:  
+    [сообщение о месте]  
+        (* <- lang_ru;; *);  
+    [message about place]  
+        (* <- lang_en;; *);  
+=> nrel_wit_ai_idtf:  
+    [about_place];  
+<- rrel_key_sc_element:  
+...  
+(*
+=> nrel_main_idtf:  
+    [Опр. (сообщение о месте)]  
+        (* <- lang_ru;; *);  
+    [Def. (message about place)]  
+        (* <- lang_en;; *);;  
+<- definition;;  
+<= nrel_sc_text_translation:  
+    ...  
+    (*
+    -> rrel_example:  
+        [Сообщение о месте - атомарное сообщение, которое содержит информацию о месте, в котором сделана фотография.]  
+            (* <- lang_ru;; *);;  
+    *);;  
+<= nrel_using_constants:  
+    {  
+        concept_atomic_message  
+    };;  
+*);;  

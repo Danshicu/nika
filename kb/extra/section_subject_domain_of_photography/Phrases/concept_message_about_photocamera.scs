@@ -1,0 +1,36 @@
+concept_message_about_photocamera  
+<- sc_node_not_relation;  
+=> nrel_main_idtf:  
+    [сообщение о фотокамере]  
+        (* <- lang_ru;; *);  
+    [message about photocamera]  
+        (* <- lang_en;; *);  
+=> nrel_wit_ai_idtf:  
+    [about_photocamera];  
+<- rrel_key_sc_element:  
+...  
+(*
+=> nrel_main_idtf:  
+    [Опр. (сообщение о фотокамере)]  
+        (* <- lang_ru;; *);  
+    [Def. (message about photocamera)]  
+        (* <- lang_en;; *);;  
+<- definition;;  
+<= nrel_sc_text_translation:  
+    ...  
+    (*
+    -> rrel_example:  
+        [Сообщение о фотокамере - атомарное сообщение, которое содержит информацию о характеристиках, функциях или модели фотокамеры.]  
+            (* <- lang_ru;; *);;  
+    *);  
+    ...  
+    (*
+    -> rrel_example:  
+        [Message about camera is an atomic message that contains information about the characteristics, functions, or model of a photocamera.]  
+            (* <- lang_en;; *);;  
+    *);;  
+<= nrel_using_constants:  
+    {  
+        concept_atomic_message  
+    };;  
+*);;

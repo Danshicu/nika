@@ -1,0 +1,22 @@
+LochNess
+<- concept_photo;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Loch Ness monster]
+    (* <- lang_ru;; *);
+=> nrel_idtf:
+    [Лох-несское чудовище]
+    (* <- lang_ru;; *);
+=> nrel_note:
+   [Несси - персонаж шотландского фольклора и современной массовой культуры, существо, согласно популярным представлениям обитающее в озере Лох-Несс в Северо-Шотландском нагорье.]
+   (* <- lang_ru;; *);
+=> nrel_date:
+   [1934]
+   (* <- lang_ru;; *);
+=> nrel_place:
+   [Шотландия]
+   (* <- lang_ru;; *);
+=> nrel_photography_genre:
+   [concept_reportage]
+   (* <- lang_ru;; *);;
+

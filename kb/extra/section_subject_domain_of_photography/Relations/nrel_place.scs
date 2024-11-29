@@ -1,0 +1,30 @@
+nrel_place
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+  [место](* <- lang_ru;; *);
+  [place](* <- lang_eng;; *);;
+
+nrel_place <- rrel_key_sc_element:... 
+(*
+    <- sc_definition;;
+    <- definition;;
+    => nrel_main_idtf: 
+    [опр. (место)](*<- lang_ru;;*);
+    [def. (place)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [место — это географическое положение, определяющее какой-либо объект.](*<- lang_ru;;*);;
+        -> rrel_example: 
+            [place is a geographical location that defines an object.](*<- lang_en;;*);;
+    *);;
+*);;
+
+nrel_place
+=>nrel_first_domain:concept_photo;
+=>nrel_second_domain:concept_place;
+
+<- binary_relation ;
+<- non_reflexive_relation ;
+<- non_transitive_relation ;;
+

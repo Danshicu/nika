@@ -1,7 +1,7 @@
 concept_iso_sensitivity
+<- concept_wit_entity;
 <- concept_photography;
 <- sc_node_class;
-<- class;
 
 => nrel_main_idtf:
    [светочувствительность]

@@ -1,7 +1,7 @@
 concept_macro_photography
+<- concept_wit_entity;
 <- concept_photography_genre;
 <- sc_node_class;
-<- class;
 
 => nrel_main_idtf:
    [макросъёмка]

@@ -1,0 +1,36 @@
+concept_message_about_division  
+<- sc_node_not_relation;  
+=> nrel_main_idtf:  
+    [сообщение о разделении]  
+        (* <- lang_ru;; *);  
+    [message about division]  
+        (* <- lang_en;; *);  
+=> nrel_wit_ai_idtf:  
+    [about_division];  
+<- rrel_key_sc_element:  
+...  
+(*
+=> nrel_main_idtf:  
+    [Опр. (сообщение о разделении)]  
+        (* <- lang_ru;; *);  
+    [Def. (message about division)]  
+        (* <- lang_en;; *);;  
+<- definition;;  
+<= nrel_sc_text_translation:  
+    ...  
+    (*
+    -> rrel_example:  
+        [Сообщение о разделении - атомарное сообщение, которое содержит информацию о процессе разделения объекта или концепции на части или его информацию о его подвидах.]  
+            (* <- lang_ru;; *);;  
+    *);  
+    ...  
+    (*
+    -> rrel_example:  
+        [Message about division is an atomic message that contains information about the process of dividing an object or concept into parts or its subspecies.]  
+            (* <- lang_en;; *);;  
+    *);;  
+<= nrel_using_constants:  
+    {  
+        concept_atomic_message  
+    };;  
+*);;  
