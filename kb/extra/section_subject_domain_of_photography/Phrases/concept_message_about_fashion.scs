@@ -1,0 +1,36 @@
+concept_message_about_fashion
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[сообщение об моде]
+	    (* <- lang_ru;; *);
+	[message about fashion]
+	    (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_fashion];
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+	    [Опр. (сообщение о моде)]
+	        (* <- lang_ru;; *);
+	    [Def. (message about fashion)]
+	        (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сообщение о моде - атомарное сообщение, которое содержит пример моды, информацию о которой необходимо найти.]
+			    (* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Message about fashion is an atomic message that contains fashion example information about which you need to find.]
+			    (* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_atomic_message
+		};;		
+	*);;

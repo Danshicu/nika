@@ -1,8 +1,8 @@
 concept_filters
+<- concept_wit_entity;
 <- concept_photography;
 <- concept_editing;
 <- sc_node_class;
-<- class;
 
 => nrel_main_idtf:
    [фильтры]

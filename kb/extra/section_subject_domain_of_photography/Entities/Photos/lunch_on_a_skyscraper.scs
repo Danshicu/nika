@@ -1,0 +1,22 @@
+LunchOnASkyscraper
+<- concept_photo;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+    [Lunch on a skyscraper]
+    (* <- lang_ru;; *);
+=> nrel_idtf:
+    [Обед на небоскрёбе]
+    (* <- lang_ru;; *);
+=> nrel_note:
+   [Фотография сделана на уровне 69 этажа, что составляет примерно 200 метров от поверхности земли. В кадр попало одиннадцать человек, каждый из которых занимался привычными делами — отдыхал, читал газеты или принимал пищу.]
+   (* <- lang_ru;; *);
+=> nrel_date:
+   [1932]
+   (* <- lang_ru;; *);
+=> nrel_place:
+   [Манхэттен]
+   (* <- lang_ru;; *);
+=> nrel_photography_genre:
+   [concept_staged]
+   (* <- lang_ru;; *);;
+

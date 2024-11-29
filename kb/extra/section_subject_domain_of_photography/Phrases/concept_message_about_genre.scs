@@ -1,0 +1,30 @@
+concept_message_about_division  
+<- sc_node_not_relation;  
+=> nrel_main_idtf:  
+    [сообщение о жанре]  
+        (* <- lang_ru;; *);  
+    [message about genre]  
+        (* <- lang_en;; *);  
+=> nrel_wit_ai_idtf:  
+    [about_genre];  
+<- rrel_key_sc_element:  
+...  
+(*
+=> nrel_main_idtf:  
+    [Опр. (сообщение о жанре)]  
+        (* <- lang_ru;; *);  
+    [Def. (message about genre)]  
+        (* <- lang_en;; *);;  
+<- definition;;  
+<= nrel_sc_text_translation:  
+    ...  
+    (*
+    -> rrel_example:  
+        [Сообщение о жанре - атомарное сообщение, которое содержит информацию о жанре, в котором сделана фотография.]  
+            (* <- lang_ru;; *);;  
+    *);;  
+<= nrel_using_constants:  
+    {  
+        concept_atomic_message  
+    };;  
+*);;  

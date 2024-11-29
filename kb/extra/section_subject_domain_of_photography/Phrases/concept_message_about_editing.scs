@@ -1,0 +1,36 @@
+concept_message_about_editing  
+<- sc_node_not_relation;  
+=> nrel_main_idtf:  
+    [сообщение о редактировании]  
+        (* <- lang_ru;; *);  
+    [message about editing]  
+        (* <- lang_en;; *);  
+=> nrel_wit_ai_idtf:  
+    [about_editing];  
+<- rrel_key_sc_element:  
+...  
+(*
+=> nrel_main_idtf:  
+    [Опр. (сообщение о редактировании)]  
+        (* <- lang_ru;; *);  
+    [Def. (message about editing)]  
+        (* <- lang_en;; *);;  
+<- definition;;  
+<= nrel_sc_text_translation:  
+    ...  
+    (*
+    -> rrel_example:  
+        [Сообщение о редактировании фотографии - атомарное сообщение, которое содержит информацию о правках, внесенных в изображение.]  
+            (* <- lang_ru;; *);;  
+    *);  
+    ...  
+    (*
+    -> rrel_example:  
+        [Message about photo editing is an atomic message that contains information about changes made to an image.]  
+            (* <- lang_en;; *);;  
+    *);;  
+<= nrel_using_constants:  
+    {  
+        concept_atomic_message  
+    };;  
+*);;  

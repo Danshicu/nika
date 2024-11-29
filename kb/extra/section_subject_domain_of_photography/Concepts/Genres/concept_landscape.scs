@@ -1,7 +1,7 @@
 concept_landscape
+<- concept_wit_entity;
 <- concept_photography_genre;
 <- sc_node_class;
-<- class;
 
 => nrel_main_idtf:
    [пейзаж]

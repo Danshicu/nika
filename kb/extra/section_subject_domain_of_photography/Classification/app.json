@@ -1,0 +1,7 @@
+{
+    "version": 20200513,
+    "zip-command": "zip photography.zip photography\/app.json photography\/entities\/*.json photography\/intents\/*.json photography\/traits\/*.json photography\/utterances\/*.json photography\/composer\/*.json",
+    "name": "photography",
+    "lang": "ru",
+    "timezone": "America\/Los_Angeles"
+}
